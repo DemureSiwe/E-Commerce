@@ -22,3 +22,68 @@
   --h2-font: 4rem;
   --p-font: 1.1rem;
 }
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 35px 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  transition: a11 0.5s ease;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin: 0 25px;
+  color: var(--text-color);
+}
+
+.navlist a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.navRight i {
+  font-size: 25px;
+  color: var(--text-color);
+  margin: 0 10px;
+  transition: all 0.5s ease;
+}
+
+.navRight i:hover {
+  color: var(--main-color);
+}
+
+#menuIcon {
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10001;
+  margin-left: 15px;
+  display: none;
+}
