@@ -346,3 +346,41 @@ header.sticky {
   transform: translateY(-8px);
   cursor: pointer;
 }
+
+.blogContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 1.7rem;
+  margin-top: 5rem;
+}
+.blogImg {
+  overflow: hidden;
+}
+.blogImg img {
+  display: block;
+  width: 100%;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+.blogImg img:hover {
+  transform: scale(1.1);
+}
+
+.blogBox h6 {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--second-color);
+  margin-bottom: 10px;
+}
+
+.blogBox h3 {
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+.blogBox:hover h3 {
+  color: var(--main-color);
+}
